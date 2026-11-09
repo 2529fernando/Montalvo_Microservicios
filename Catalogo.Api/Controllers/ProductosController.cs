@@ -75,7 +75,7 @@ public class ProductosController : ControllerBase
         }
         catch (DbUpdateException ex) when (DatabaseErrors.IsConstraintViolation(ex))
         {
-            return BadRequest("No se pudo actualizar el registro. Revisa las relaciones y los datos.");
+            return BadRequest("No se pudo actualizar. Revisa las relaciones y los datos.");
         }
         return NoContent();
     }
