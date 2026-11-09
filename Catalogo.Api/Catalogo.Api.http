@@ -1,0 +1,6 @@
+@host = http://localhost:5070
+
+GET {{host}}/api/Marca
+Accept: application/json
+
+###

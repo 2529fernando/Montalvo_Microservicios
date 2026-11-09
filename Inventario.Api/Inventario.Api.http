@@ -1,0 +1,6 @@
+@host = http://localhost:5071
+
+GET {{host}}/api/Bodega
+Accept: application/json
+
+###
